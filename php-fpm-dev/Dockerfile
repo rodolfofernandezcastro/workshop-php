@@ -1,4 +1,4 @@
-FROM php-fpm-base
+FROM rfcdocker/workshop-php:7.2
 
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 RUN apt-get update \    
